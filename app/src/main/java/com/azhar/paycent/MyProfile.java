@@ -18,7 +18,7 @@ public class MyProfile extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MyProfile.this, MyProfile2.class);
+                Intent intent = new Intent(MyProfile.this, VerificationActivity.class);
                 startActivity(intent);
             }
         });

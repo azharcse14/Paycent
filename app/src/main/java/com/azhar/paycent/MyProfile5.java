@@ -29,7 +29,7 @@ public class MyProfile5 extends AppCompatActivity {
         linearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MyProfile5.this, HomeActivity.class);
+                Intent intent = new Intent(MyProfile5.this, CardAddActivity.class);
                 startActivity(intent);
             }
         });

@@ -5,6 +5,7 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/pan_burgers"
     android:fitsSystemWindows="true"
     tools:context=".MainActivity"
     tools:openDrawer="start">
@@ -32,8 +33,8 @@
         android:id="@+id/navigation_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:background="#F1EFF1"
         android:layout_gravity="start"
+        android:background="#F1EFF1"
         app:headerLayout="@layout/navigation_header"
         app:menu="@menu/navigation_menu">
 

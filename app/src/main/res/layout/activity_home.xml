@@ -12,37 +12,39 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent=".5" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidLineHorizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent=".5" />
+
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="#015CBA"
-        android:orientation="vertical"
         android:gravity="center"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/guidLineHorizontal"
         app:layout_constraintEnd_toEndOf="@id/guidLineVertical"
-        app:layout_constraintBottom_toTopOf="@id/guidLineHorizontal">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_gravity="center"
-            android:src="@drawable/ic_baseline_location_on_24"
-            android:contentDescription="@string/todo" />
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_baseline_location_on_24" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/zapper_nearby"
-            android:textSize="20sp"
             android:gravity="center"
+            android:text="@string/zapper_nearby"
             android:textColor="@color/white"
-            />
+            android:textSize="20sp" />
 
     </LinearLayout>
 
@@ -50,27 +52,27 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="#23A6FE"
-        android:orientation="vertical"
         android:gravity="center"
-        app:layout_constraintStart_toStartOf="@id/guidLineVertical"
-        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/guidLineHorizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/guidLineHorizontal">
+        app:layout_constraintStart_toStartOf="@id/guidLineVertical"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_gravity="center"
-            android:src="@drawable/ic_baseline_mark_message_unread_24"
-            android:contentDescription="@string/todo" />
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_baseline_mark_message_unread_24" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/you_have_1_unread_message"
-            android:textSize="20sp"
             android:gravity="center"
+            android:text="@string/you_have_1_unread_message"
             android:textColor="@color/white"
-            />
+            android:textSize="20sp" />
 
     </LinearLayout>
 
@@ -78,27 +80,27 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="#051B36"
-        android:orientation="vertical"
         android:gravity="center"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/guidLineHorizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/guidLineVertical"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guidLineHorizontal">
 
         <ImageView
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_gravity="center"
-            android:src="@drawable/ic_baseline_verified_user_24"
-            android:contentDescription="@string/todo" />
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_baseline_verified_user_24" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/loyalty_cards"
-            android:textSize="20sp"
             android:gravity="center"
+            android:text="@string/loyalty_cards"
             android:textColor="@color/white"
-            />
+            android:textSize="20sp" />
 
     </LinearLayout>
 
@@ -106,52 +108,55 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="#75A541"
-        android:orientation="vertical"
         android:gravity="center"
-        app:layout_constraintStart_toStartOf="@id/guidLineVertical"
-        app:layout_constraintTop_toTopOf="@id/guidLineHorizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintStart_toStartOf="@id/guidLineVertical"
+        app:layout_constraintTop_toTopOf="@id/guidLineHorizontal">
 
         <ImageView
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_gravity="center"
-            android:src="@drawable/ic_baseline_card_giftcard_24"
-            android:contentDescription="@string/todo" />
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_baseline_card_giftcard_24" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/vouchers"
-            android:textSize="20sp"
             android:gravity="center"
+            android:text="@string/vouchers"
             android:textColor="@color/white"
-            />
+            android:textSize="20sp" />
 
     </LinearLayout>
 
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/scanCard"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:orientation="vertical"
         android:elevation="12dp"
+        android:orientation="vertical"
         app:cardCornerRadius="100dp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
-            android:layout_gravity="center"
-            android:orientation="vertical"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
             <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_baseline_qr_code_24"/>
+                android:src="@drawable/ic_baseline_qr_code_24" />
+
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -159,13 +164,48 @@
                 android:text="@string/scan_caps"
                 android:textColor="@color/black"
                 android:textSize="26sp"
-                android:textStyle="bold"
-                />
+                android:textStyle="bold" />
         </LinearLayout>
-
-
-
     </androidx.cardview.widget.CardView>
+
+    <!--    <androidx.drawerlayout.widget.DrawerLayout-->
+    <!--        android:id="@+id/drawer_layout"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:orientation="vertical">-->
+
+    <!--            <androidx.appcompat.widget.Toolbar-->
+    <!--                android:id="@+id/toolBar"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="?attr/actionBarSize"-->
+    <!--                android:elevation="4dp"-->
+    <!--                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+    <!--                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"-->
+    <!--                app:titleTextColor="@color/white">-->
+
+    <!--            </androidx.appcompat.widget.Toolbar>-->
+
+    <!--        </LinearLayout>-->
+
+    <!--        <com.google.android.material.navigation.NavigationView-->
+    <!--            android:id="@+id/navigation_view"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:background="#F1EFF1"-->
+    <!--            android:layout_gravity="start"-->
+    <!--            app:headerLayout="@layout/nav_header_home"-->
+    <!--            app:menu="@menu/nav_menu_home"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent">-->
+    <!--        </com.google.android.material.navigation.NavigationView>-->
+
+    <!--    </androidx.drawerlayout.widget.DrawerLayout>-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

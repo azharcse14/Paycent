@@ -9,21 +9,40 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Paycent">
-        <activity android:name=".HomeActivity"/>
-        <activity android:name=".StartActivity" />
-        <activity android:name=".MyProfile5"/>
-        <activity android:name=".MyProfile4" />
-        <activity android:name=".MyProfile3" />
-        <activity android:name=".MyProfile2" />
-        <activity android:name=".MyProfile" />
-        <activity android:name=".TermsAndCondition" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".ProcessingThirdActivity"></activity>
+        <activity android:name=".ProcessingSecondActivity" />
+        <activity android:name=".ProcessingFourthActivity" />
+        <activity android:name=".ProcessingActivity" />
+        <activity android:name=".PaymentActivity" />
+        <activity android:name=".CardAddActivity" />
+        <activity android:name=".VerificationCodeActivity" />
+        <activity android:name=".VerificationActivity" />
+        <activity android:name=".InformationColectionActivity" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:theme="@style/AppTheme.Launcher">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Pay4" />
+        <activity android:name=".Pay3" />
+        <activity android:name=".Pay2" />
+        <activity android:name=".Pay1" />
+        <activity android:name=".CardDetails" />
+        <activity android:name=".Card" />
+        <activity android:name=".Camera" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".StartActivity" />
+        <activity android:name=".MyProfile5" />
+        <activity android:name=".MyProfile4" />
+        <activity android:name=".MyProfile3" />
+        <activity android:name=".MyProfile2" />
+        <activity android:name=".MyProfile" />
+        <activity android:name=".TermsAndCondition" />
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

@@ -23,10 +23,10 @@
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:text="@string/my_profile"
             android:textSize="26sp"
-            android:textStyle="bold"
-            android:layout_gravity="center"/>
+            android:textStyle="bold" />
 
     </androidx.appcompat.widget.Toolbar>
 
@@ -34,22 +34,22 @@
         android:id="@+id/headTv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="20dp"
         android:background="@color/white"
+        android:padding="20dp"
         android:text="@string/enter_the_verification_code"
         android:textColor="@color/black"
         android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/linear"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@id/toolBar"
-        app:layout_constraintTop_toBottomOf="@id/toolBar"
-        app:layout_constraintBottom_toTopOf="@id/linear" />
+        app:layout_constraintTop_toBottomOf="@id/toolBar" />
 
     <LinearLayout
         android:id="@+id/linear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_marginTop="50dp"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@id/headTv"
         app:layout_constraintTop_toBottomOf="@id/headTv">
@@ -57,29 +57,28 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:padding="20dp"
             android:text="@string/verification_sms_details"
             android:textColor="@color/black"
             android:textSize="24sp"
-            android:textStyle="bold"
-            android:gravity="center"/>
+            android:textStyle="bold" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="20dp"
             android:hint="@string/verification_code"
             android:padding="20dp"
-            android:textSize="26sp"
-            android:layout_margin="20dp"/>
+            android:textSize="26sp" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/otp_not_available"
             android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
-            android:gravity="center"/>
-
-
+            android:gravity="center"
+            android:text="@string/otp_not_available" />
 
 
     </LinearLayout>
@@ -105,7 +104,7 @@
             android:drawableLeft="@drawable/ic_baseline_cancel_24"
             android:text="@string/cancel"
             android:textColor="@color/black"
-            android:textSize="26sp"/>
+            android:textSize="26sp" />
 
         <Button
             android:id="@+id/saveBtn"
@@ -115,7 +114,7 @@
             android:drawableEnd="@drawable/ic_baseline_done_24"
             android:text="@string/save"
             android:textColor="#388E3C"
-            android:textSize="26sp"/>
+            android:textSize="26sp" />
 
     </LinearLayout>
 

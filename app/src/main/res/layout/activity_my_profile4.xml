@@ -85,8 +85,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_baseline_email_24"
-                android:layout_marginEnd="36dp"/>
+                android:layout_marginEnd="36dp"
+                android:src="@drawable/ic_baseline_email_24" />
 
             <TextView
                 android:layout_width="0dp"
@@ -174,10 +174,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="14dp"
-        android:layout_marginEnd="14dp"
         android:layout_marginTop="26dp"
-        android:orientation="horizontal"
+        android:layout_marginEnd="14dp"
         android:background="@color/white"
+        android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="@id/linear_first"
         app:layout_constraintTop_toBottomOf="@id/linear_first">
 
@@ -186,16 +186,16 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/my_cards"
-            android:textSize="16sp"
             android:padding="16dp"
-            android:textColor="@color/black"/>
+            android:text="@string/my_cards"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_baseline_arrow_forward_ios_24"
-            android:padding="16dp"/>
+            android:padding="16dp"
+            android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
     </LinearLayout>
 
     <LinearLayout
@@ -203,10 +203,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="14dp"
-        android:layout_marginEnd="14dp"
         android:layout_marginTop="4dp"
-        android:orientation="horizontal"
+        android:layout_marginEnd="14dp"
         android:background="@color/white"
+        android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="@id/linear_second"
         app:layout_constraintTop_toBottomOf="@id/linear_second">
 
@@ -214,16 +214,16 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/my_address"
-            android:textSize="16sp"
             android:padding="16dp"
-            android:textColor="@color/black"/>
+            android:text="@string/my_address"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_baseline_arrow_forward_ios_24"
-            android:padding="16dp"/>
+            android:padding="16dp"
+            android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

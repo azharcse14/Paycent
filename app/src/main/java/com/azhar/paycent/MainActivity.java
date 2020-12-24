@@ -49,7 +49,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             startActivity(intent);
         }else if (menuitem.getItemId()==R.id.inbox){
 
-            Toast.makeText(this, "Inbox", Toast.LENGTH_SHORT).show();
+            Intent intent =new Intent(MainActivity.this,InformationColectionActivity.class);
+            startActivity(intent);
+
+//            Toast.makeText(this, "Inbox", Toast.LENGTH_SHORT).show();
         }
 
 
